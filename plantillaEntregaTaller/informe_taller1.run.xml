@@ -41,18 +41,19 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="0">
+  <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>plantillaInformeTaller-modMat-UNBOG2017293.bcf</file>
+      <file>informe_taller1.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>plantillaInformeTaller-modMat-UNBOG2017293.bbl</file>
+      <file>informe_taller1.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
       <file>blx-compat.def</file>
       <file>biblatex.def</file>
+      <file>blx-natbib.def</file>
       <file>standard.bbx</file>
       <file>authoryear.bbx</file>
       <file>apa.cbx</file>
@@ -60,23 +61,23 @@
       <file>spanish.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="0">
+  <external package="biblatex" priority="5" active="1">
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>plantillaInformeTaller-modMat-UNBOG2017293</infile>
+      <infile>informe_taller1</infile>
     </cmdline>
     <input>
-      <file>plantillaInformeTaller-modMat-UNBOG2017293.bcf</file>
+      <file>informe_taller1.bcf</file>
     </input>
     <output>
-      <file>plantillaInformeTaller-modMat-UNBOG2017293.bbl</file>
+      <file>informe_taller1.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>plantillaInformeTaller-modMat-UNBOG2017293.bbl</file>
+      <file>informe_taller1.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>plantillaInformeTaller-modMat-UNBOG2017293.bcf</file>
+      <file>informe_taller1.bcf</file>
     </requires>
     <requires type="editable">
       <file>referencias.bib</file>
